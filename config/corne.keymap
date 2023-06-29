@@ -20,9 +20,14 @@
     combos {
         compatible = "zmk,combos";
 
-        bootloader {
+        bootloader_left {
             bindings = <&bootloader>;
-            key-positions = <37 40 24 35 16 19>; // Both layers, both shifts, f, j
+            key-positions = <37 24 16>; // left_layer, shift, f
+        };
+
+        bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <40 19 35>; // right_layer, shift, j
         };
     };
 
